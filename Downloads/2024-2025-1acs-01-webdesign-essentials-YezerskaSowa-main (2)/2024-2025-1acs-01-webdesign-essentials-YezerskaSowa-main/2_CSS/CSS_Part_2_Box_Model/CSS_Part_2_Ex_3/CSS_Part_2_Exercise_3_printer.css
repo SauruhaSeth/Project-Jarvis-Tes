@@ -1,0 +1,24 @@
+/* printer */
+
+* {
+  color: black !important;
+  background: white !important;
+  font-family: serif;
+  font-size: 12pt;
+  line-height: 1.6;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

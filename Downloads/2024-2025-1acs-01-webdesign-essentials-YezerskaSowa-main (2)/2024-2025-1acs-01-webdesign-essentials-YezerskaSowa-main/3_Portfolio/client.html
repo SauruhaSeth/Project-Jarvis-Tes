@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client One-Pager · Webdesign Essentials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="One-pager client demo: simple hero, features, small gallery, and clear call-to-action. Built with flexbox." />
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/client.css">
+</head>
+<body id="top">
+  <p class="mt-2" style="text-align:center;margin:10px 0;">
+  <a href="index.html" style="display:inline-block;padding:6px 10px;border:1px solid #e9d5ff;border-radius:10px;background:#fbf8ff;color:#60a5fa;text-decoration:none;">
+    <i class="fa-solid fa-arrow-left"></i> Back to portfolio
+  </a>
+</p>
+
+
+  <nav class="topnav">
+    <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="projects.html" class="btn"><i class="fa-solid fa-list-check"></i> Projects</a>
+    <a href="composition.html" class="btn"><i class="fa-solid fa-camera-retro"></i> Composition</a>
+  </nav>
+
+  <header class="hero">
+    <img class="logo" src="../logo.png" alt="Logo">
+    <h1>QuickDrop — Delivery made simple</h1>
+    <p class="tagline">Fast. Clear. Reliable. Built for busy small businesses.</p>
+    <a href="#features" class="cta"><i class="fa-solid fa-bolt"></i> Explore features</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="text">
+        <h2><i class="fa-solid fa-circle-info icon"></i> What is QuickDrop?</h2>
+        <p>
+          QuickDrop is a simple website concept for courier bookings and live delivery status.
+          Clear steps, strong contrast and a layout that works on any device.
+        </p>
+        <ul class="bullets">
+          <li><i class="fa-solid fa-check icon"></i> Clear call-to-action buttons</li>
+          <li><i class="fa-solid fa-check icon"></i> Accessible color contrast</li>
+          <li><i class="fa-solid fa-check icon"></i> Mobile-first responsive layout</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="images/deliveryapp.jpg" alt="Delivery app landing preview">
+        <figcaption>Landing hero mockup</figcaption>
+      </figure>
+    </section>
+
+    <section id="features" class="features">
+      <h2><i class="fa-solid fa-sparkles icon"></i> Features</h2>
+      <div class="cards">
+        <article class="card">
+          <i class="fa-solid fa-motorcycle fa-2x"></i>
+          <h3>Fast Booking</h3>
+          <p>One page booking form with clear steps and real-time feedback.</p>
+        </article>
+
+        <article class="card">
+          <i class="fa-solid fa-map-location-dot fa-2x"></i>
+          <h3>Live Tracking</h3>
+          <p>Simple status updates: scheduled, picked up, on the way, delivered.</p>
+        </article>
+
+        <article class="card">
+          <i class="fa-solid fa-shield-heart fa-2x"></i>
+          <h3>Trust & Safety</h3>
+          <p>Readable typography, strong focus states and consistent spacing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2><i class="fa-solid fa-images icon"></i> Gallery</h2>
+      <div class="grid">
+        <figure>
+          <img src="images/qrmenu.jpg" alt="QR menu concept">
+          <figcaption>QR menu concept</figcaption>
+        </figure>
+        <figure>
+          <img src="images/contactless.jpg" alt="Contactless card concept">
+          <figcaption>Contactless concept</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="links">
+      <a href="https://www.pexels.com/@stjepan-raguz-2148179542" target="_blank"><i class="fa-brands fa-pexels"></i> Pexels</a> ·
+      <a href="https://github.com/YezerskaSowa" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> ·
+      <a href="#top" class="top"><i class="fa-solid fa-circle-up"></i></a>
+    </p>
+    <p class="disclaimer">
+      EN Disclaimer: all of these websites/projects are fictional and all website images have been AI generated.
+    </p>
+    <p class="copy">&copy; <span id="y"></span> Webdesign Essentials</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#months {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.month h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.month ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.month li {
+    padding: 0.25rem 0;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid lightgray;
+    font-size: 0.9rem;
+}

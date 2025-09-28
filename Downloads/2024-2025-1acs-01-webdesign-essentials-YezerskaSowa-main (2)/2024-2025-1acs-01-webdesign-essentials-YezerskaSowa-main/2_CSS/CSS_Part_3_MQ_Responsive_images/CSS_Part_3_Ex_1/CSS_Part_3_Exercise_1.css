@@ -1,0 +1,61 @@
+/* Part 3 Ex 1 */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+.hideonsmall,
+.hideonmedium,
+.hideonlarge,
+.hideonprint,
+.showonmedium,
+.showonlarge,
+.showonprint {
+  display: none;
+}
+
+/* Small screens (default) */
+@media screen and (max-width: 599px) {
+  .hideonsmall {
+    display: none;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .showonmedium {
+    display: inline;
+  }
+
+  .hideonmedium {
+    display: none;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+  .showonlarge {
+    display: inline;
+  }
+
+  .hideonlarge {
+    display: none;
+  }
+}
+
+/* Print layout */
+@media print {
+  .showonprint {
+    display: block;
+  }
+
+  .hideonprint {
+    display: none;
+  }
+}

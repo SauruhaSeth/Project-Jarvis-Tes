@@ -1,0 +1,47 @@
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; font-family: Inter, Arial, sans-serif; line-height:1.7; color:#0f1226;
+  background: linear-gradient(180deg,#f6f5ff 0%, #eef2ff 100%); }
+img{max-width:100%; height:auto; display:block}
+
+
+.page-header{
+  max-width: 980px;
+  margin: 20px auto 10px;
+  padding: 0 16px 16px;
+  border-bottom: 2px solid #e9d5ff; 
+  text-align: center;
+}
+.page-header .brand{display:block; margin:0 auto 8px}
+.page-header h1{font-family:Poppins, Arial, sans-serif; font-weight:600; margin:0; color:#1b1533}
+
+
+.container{max-width: 980px; margin: 16px auto; padding: 0 16px}
+
+
+h2{font-family:Poppins, Arial, sans-serif; margin: 10px 0; color:#1b1533}
+h3{font-family:Poppins, Arial, sans-serif; margin: 6px 0 4px; color:#1b1533; font-weight:600}
+
+
+a{color:#60a5fa; text-decoration:none}
+a:hover{color:#3b82f6; text-decoration:underline}
+
+
+.tech-list{padding-left: 18px}
+.tech-list li{margin-bottom:14px; background:#ffffff; border:1px solid #e9d5ff; border-radius:12px; padding:10px 12px}
+.tech-list p{margin:6px 0}
+
+
+.back-top{margin-top: 14px}
+.back-top a{display:inline-block; padding:6px 10px; border:1px solid #e9d5ff; border-radius:10px; background:#fff}
+.back-top a:hover{background:#f3f0ff}
+
+
+.page-footer{max-width:980px; margin: 10px auto 24px; padding: 0 16px; text-align:center; color:#6b7280}
+.page-footer a{color:#0f1226}
+.page-footer a:hover{color:#3b82f6}
+
+
+::selection{background:#c7d2fe; color:#0f1226}
+

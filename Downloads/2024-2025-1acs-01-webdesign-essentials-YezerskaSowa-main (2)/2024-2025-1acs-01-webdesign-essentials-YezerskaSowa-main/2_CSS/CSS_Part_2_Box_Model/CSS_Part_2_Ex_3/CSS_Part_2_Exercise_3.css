@@ -1,0 +1,33 @@
+/* Main styling */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #fff;
+  color: #00283c;
+}
+
+a {
+  color: #fa6432;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #fa6432;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+/* this part is for to fix spacing */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}

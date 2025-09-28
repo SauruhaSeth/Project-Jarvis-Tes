@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Arimo', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+aside,
+#container {
+    padding: 15px;
+}
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+img {
+    filter: grayscale(100%);
+}
+
+svg {
+    display: none;
+}
+
+
+@media screen and (min-width: 550px) {
+    body {
+        background-color: #ccc;
+    }
+
+    #container {
+        max-width: 1000px;
+        background-color: white;
+        margin: 30px auto;
+        padding: 30px;
+        box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.7);
+    }
+
+    img {
+        filter: none;
+        max-width: 250px;
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    }
+
+    .left {
+        float: left;
+        margin-right: 15px;
+    }
+
+    .right {
+        float: right;
+        margin-left: 15px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    img, svg {
+        max-width: 100%;
+        padding: 10px;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    svg {
+        display: block;
+    }
+
+    img {
+        clip-path: none;
+        max-width: 100%;
+    }
+}

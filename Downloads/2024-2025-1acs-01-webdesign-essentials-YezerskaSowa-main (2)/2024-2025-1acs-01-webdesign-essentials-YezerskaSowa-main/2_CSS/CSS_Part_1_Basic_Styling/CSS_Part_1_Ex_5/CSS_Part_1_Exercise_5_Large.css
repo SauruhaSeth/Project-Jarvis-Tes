@@ -1,0 +1,33 @@
+/* large screens */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    table {
+        width: 70%;
+        margin: 40px auto;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    td {
+        padding: 20px;
+        vertical-align: top;
+    }
+
+    ul {
+        padding-left: 25px;
+    }
+
+    caption {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,11 @@
+
+.page-header{ text-align:left }
+.page-header .brand,
+.page-header h1{
+  display:inline-block;
+  vertical-align:middle;
+}
+.page-header .brand{ margin: 0 10px 0 0 }
+
+.tech-list li{ padding:12px 16px }
+

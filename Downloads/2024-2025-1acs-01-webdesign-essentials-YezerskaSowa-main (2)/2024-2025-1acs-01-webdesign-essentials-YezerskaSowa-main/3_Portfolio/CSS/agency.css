@@ -1,0 +1,123 @@
+
+:root{
+  --bg: linear-gradient(180deg,#f6f5ff 0%, #eef2ff 100%);
+  --paper:#ffffff;
+  --ink:#0f1220;
+  --muted:#6b7280;
+  --accent:#8b5cf6;        
+  --accent-ink:#ffffff;
+  --line:#e9d5ff;            
+  --link:#60a5fa;           
+  --link-hover:#3b82f6;
+}
+
+body{
+  margin:0;
+  font-family: Inter, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+
+h1,h2,h3,h4{
+  font-family: Outfit, Arial, sans-serif;
+  margin:0 0 .25rem 0;
+  color:#1b1533; 
+}
+
+
+header, nav, section, footer{
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:1rem;
+  box-shadow:0 2px 8px rgba(0,0,0,.03);
+  border-radius:12px;
+}
+
+
+header{
+  border-left:6px solid var(--accent);
+  background:
+    linear-gradient(180deg, rgba(139,92,246,.06), rgba(96,165,250,.06));
+}
+header .tag{ color:var(--muted); letter-spacing:.02em }
+
+
+a{
+  color:var(--link);
+  text-decoration:none;
+  border-bottom:1px dotted var(--link);
+  transition:color .2s ease, border-color .2s ease, background .2s ease;
+}
+a:hover, a:focus{
+  color:var(--link-hover);
+  border-bottom-color:var(--link-hover);
+  outline:none;
+}
+
+
+.navlink{
+  border:1px solid var(--line);
+  border-radius:.6rem;
+  background:#fbf8ff;                 
+  padding:.5rem .75rem;
+  transition: background .2s, border-color .2s, transform .2s;
+}
+.navlink:hover{
+  background:#f3f0ff;               
+  border-color:#d8c9ff;
+  transform: translateY(-1px);
+}
+
+
+.btn-primary-simple{
+  background:var(--accent);
+  color:var(--accent-ink);
+  border-radius:.6rem;
+  border:0;
+  box-shadow:0 6px 18px rgba(139,92,246,.18);
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+.btn-primary-simple:hover{
+  background:#7c3aed;                
+  transform: translateY(-1px);
+  box-shadow:0 10px 26px rgba(139,92,246,.24);
+}
+
+/* Images */
+img.soft{
+  border-radius:12px;
+  box-shadow:0 3px 12px rgba(0,0,0,.06);
+  border:1px solid #efe7ff;          
+}
+
+
+figcaption{ color:var(--muted); font-size:.95rem }
+
+
+section h2, section h3{
+  position:relative;
+  padding-left:.65rem;
+}
+section h2::before, section h3::before{
+  content:"";
+  position:absolute;
+  left:0; top:.25rem; bottom:.25rem;
+  width:4px;
+  background:linear-gradient(180deg,var(--accent),var(--link));
+  border-radius:2px;
+}
+
+
+footer .social{
+  border:0;
+  background:#ffffff;
+  padding:.4rem .6rem;
+  border-radius:.6rem;
+  display:inline-block;
+  margin-left:.25rem;
+  box-shadow:0 1px 4px rgba(0,0,0,.04);
+}
+footer .social:hover{
+  background:#f3f0ff;
+}

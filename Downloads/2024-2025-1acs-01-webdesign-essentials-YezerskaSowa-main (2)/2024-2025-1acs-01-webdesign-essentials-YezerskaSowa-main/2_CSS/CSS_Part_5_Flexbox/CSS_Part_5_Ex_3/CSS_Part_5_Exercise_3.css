@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#services {
+    padding: 30px;
+}
+
+#services h1 {
+    color: #042F5F;
+    background-color: #fff;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+#services p {
+    font-size: 2em;
+}
+
+body { line-height: 1.5; color: #111; }
+
+#services,
+#about {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#services > section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+#services > section > article{
+    /* two columns on small screens */
+    flex: 1 1 calc(50% - 16px);
+    background: #f6f7f9;
+    border: 1px solid #e6e8ee;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+#services > section > article:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+
+#services p{ font-size: 1.25rem; }
+
+#about{
+    height: 260px;
+    margin: 30px auto;
+    border-radius: 14px;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.25)),
+      url("images/camera.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 900px){
+    #services > section > article{
+        flex: 1 1 calc(33.333% - 16px);
+    }
+    #about{
+        height: 320px;
+        margin: 40px auto;
+    }
+}

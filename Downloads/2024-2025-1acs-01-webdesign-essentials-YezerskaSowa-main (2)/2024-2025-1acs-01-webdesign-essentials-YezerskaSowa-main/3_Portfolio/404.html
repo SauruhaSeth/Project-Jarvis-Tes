@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page not found (404)</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/404.css">
+  <meta name="description" content="404: the page you were looking for does not exist." />
+  <meta name="author" content="Stjepan Raguž" />
+</head>
+<body>
+  <header>
+    <h1><span class="code">404</span> Page not found</h1>
+    <p class="sub">Sorry — the page you’re after doesn’t exist (or moved).</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>Let’s get you back on track</h2>
+      <p>Try the homepage or jump directly to the sections in my portfolio.</p>
+      <div class="actions">
+        <a class="btn primary" href="index.html"><i class="fa-solid fa-house"></i> Go to homepage</a>
+        <a class="btn" href="composition.html"><i class="fa-solid fa-palette"></i> Level 1</a>
+        <a class="btn" href="projects.html"><i class="fa-solid fa-layer-group"></i> Level 2</a>
+        <a class="btn" href="client.html"><i class="fa-solid fa-cubes-stacked"></i> Level 3</a>
+        <a class="btn" href="agency.html"><i class="fa-solid fa-grid-2"></i> Level 4</a>
+        <a class="btn" href="index.html#lvl5"><i class="fa-solid fa-microchip"></i> Level 5</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://www.pexels.com/@stjepan-raguz-2148179542" target="_blank"><i class="fa-brands fa-pexels"></i> Pexels</a> ·
+      <a href="https://github.com/YezerskaSowa" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    </p>
+    <small class="muted">© <span id="y"></span> Webdesign Essentials — hover the card to see the effect</small>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

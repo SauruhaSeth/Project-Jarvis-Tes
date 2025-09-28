@@ -1,0 +1,24 @@
+
+*{box-sizing:border-box}
+body{font-family:"Inter", Arial, sans-serif; margin:0; color:#f4f6ff;
+  background:#1e2a44 url("../images/pattern.jpg") center/cover no-repeat fixed;}
+header, footer{padding:16px 20px}
+h1,h2,h3{font-family:"Poppins", Arial, sans-serif; margin:0 0 10px}
+p{margin:0 0 10px}
+
+nav ul{list-style:none; padding:0; margin:0 0 8px}
+nav li{display:inline-block; margin-right:10px}
+nav a{color:#d7e3ff; text-decoration:none; padding:6px 10px; border-radius:6px; transition: background .2s}
+nav a:hover{background:rgba(255,255,255,.1); text-decoration:underline}
+
+.intro{background:rgba(0,0,0,.25); padding:12px; border-radius:8px}
+
+
+.geek-gallery{
+  display:flex; flex-direction:column; gap:12px; align-items:center; margin:14px 0;
+}
+.geek-gallery img{max-width:90%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.25)}
+
+.geek-links ul{list-style:disc; padding-left:18px}
+.geek-links li{margin:6px 0}
+.geek-links a{color:#c9e2ff}

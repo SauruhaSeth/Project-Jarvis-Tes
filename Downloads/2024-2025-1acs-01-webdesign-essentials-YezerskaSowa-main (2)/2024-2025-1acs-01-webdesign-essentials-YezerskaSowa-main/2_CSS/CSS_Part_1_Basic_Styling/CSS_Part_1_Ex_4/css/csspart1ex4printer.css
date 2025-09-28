@@ -1,0 +1,14 @@
+/* printer */
+body {
+    font-family: serif;
+    color: black;
+    background-color: white;
+}
+
+nav, img {
+    display: none;
+}
+
+a::after {
+    content: " (" attr(href) ")";
+}

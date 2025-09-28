@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    padding: 2rem;
+}
+
+.leaf {
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#product {
+    background-color: #d35400; 
+    top: 100px;
+    left: 100px;
+}
+
+#price {
+    background-color: #c0392b; 
+    top: 120px;
+    left: 180px;
+}
+
+#place {
+    background-color: #27ae60; 
+    top: 160px;
+    left: 130px;
+}
+
+#promotion {
+    background-color: #f1c40f; 
+    top: 140px;
+    left: 210px;
+}
+
+
+figure {
+    margin-top: 320px;
+    text-align: center;
+    font-style: italic;
+}

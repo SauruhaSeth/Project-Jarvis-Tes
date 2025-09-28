@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #051632;
+    color: #fff;
+}
+
+header,
+footer {
+    padding: 15px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.central{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+header{
+  background:#07214d url(ring.png) no-repeat right 20px top 15px;
+  background-size:90px;
+  border-bottom:4px solid #031128;
+}
+header h1{
+  font-size:2rem;
+}
+
+nav h2{               
+  position:absolute;
+  left:-9999px;
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+nav a{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  background:#0b2a63;
+  padding:10px 14px;
+  border:1px solid #234b92;
+  border-radius:8px;
+  transition:background .2s, transform .2s;
+}
+nav a:hover,
+nav a:focus{
+  background:#234b92;
+  transform:translateY(-1px);
+}
+nav a span{font-weight:bold}
+
+.color{
+  background:#0a2147;
+  border-top:4px solid #031128;
+  border-bottom:4px solid #031128;
+}
+
+.store{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  padding:15px;
+}
+
+.store section{
+  flex:1 1 260px;        
+  background:#fff;
+  color:#051632;
+  border:3px solid #000;   
+  border-radius:12px;
+  padding:16px;
+  min-height:155px;
+}
+.store h3{
+  margin-bottom:8px;
+  font-size:1.25rem;
+}
+.store p{margin:8px 0}
+
+
+.store a{
+  display:inline-block;
+  background:#e33535 url(cart.png) no-repeat 8px center;
+  background-size:18px;
+  color:#fff;
+  text-decoration:none;
+  padding:8px 12px 8px 32px; 
+  border-radius:6px;
+  border:1px solid #b51e1e;
+}
+.store a:hover,
+.store a:focus{
+  background:#b51e1e;
+}
+
+footer{
+  background:#000;
+  text-align:center;
+}
+footer h2{
+  font-size:1rem;
+  font-weight:bold;
+}
+
+@media (min-width:700px){
+  nav ul{
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  nav a{ border-radius:999px; } 
+}
+
+@media (min-width:1100px){
+  header{ background-size:110px; }
+  .store{ gap:20px; }
+  .store section{ flex:1 1 300px; }
+}
